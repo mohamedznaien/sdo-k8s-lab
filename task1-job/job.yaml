@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: expo-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: expo
+        image: mznaien/expo:1.0
+        args: ["____", "____"] #fill this in with the correct arguments
