@@ -9,4 +9,4 @@ spec:
       containers:
       - name: expo
         image: expo:1.0
-        args: ["____", "____"] # Students fill in: ["3", "4"]
+        args: ["____", "____"] 
