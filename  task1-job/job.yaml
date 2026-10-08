@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: expo-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: expo
+        image: expo:1.0
+        args: ["____", "____"] # Students fill in: ["3", "4"]
