@@ -3,10 +3,19 @@ kind: Job
 metadata:
   name: expo-job
 spec:
+  backoffLimit: 0
   template:
     spec:
       restartPolicy: Never
       containers:
-      - name: expo
-        image: mznaien/expo:1.0
-        args: ["____", "____"] #fill this in with the correct arguments
+      - name: expo-application
+        image: expo:1.0
+        imagePullPolicy: IfNotPresent
+        args: ["3", "10"]
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "250m"
+          requests:
+            memory: "16Mi"
+            cpu: "50m"

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-deployment
 spec:
-  replicas: ____ 
+  replicas: _______ #fill this in with the correct number of replicas: 3
   selector:
     matchLabels:
       app: nginx
